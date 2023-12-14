@@ -15,7 +15,7 @@ public class CodeGenerator {
     static String moduleName = "sys";
 
     static String mapperLocation = "D:\\CodeFiles\\JavaApplication1\\hr-admin-web\\src\\main\\resources\\mapper\\" + moduleName;
-    static String tables = "x_user,x_role,x_menu,x_user_role,x_role_menu";
+    static String tables = "x_user,x_role,x_menu,x_user_role,x_role_menu,x_volunteer_work,x_application_info";
     public static void main(String[] args) {
         FastAutoGenerator.create(url, username, password)
                 .globalConfig(builder -> {
