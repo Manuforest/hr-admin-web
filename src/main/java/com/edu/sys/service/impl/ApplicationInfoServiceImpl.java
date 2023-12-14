@@ -17,4 +17,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class ApplicationInfoServiceImpl extends ServiceImpl<ApplicationInfoMapper, ApplicationInfo> implements IApplicationInfoService {
 
+    @Override
+    public void addApplicationInfo(ApplicationInfo applicationInfo) {
+        this.baseMapper.insert(applicationInfo);
+    }
+
 }

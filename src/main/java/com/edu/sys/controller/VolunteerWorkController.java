@@ -38,7 +38,7 @@ public class VolunteerWorkController {
 
     @ApiOperation("查询所有志愿活动信息")
     @GetMapping("/all")
-    public Result<List<VolunteerWork>> getAllUser(){
+    public Result<List<VolunteerWork>> getAllVolunteerWorks(){
         List<VolunteerWork> list= VolunteerWorkService.list();
         if (list != null) {
             return Result.success(list,"查询成功");

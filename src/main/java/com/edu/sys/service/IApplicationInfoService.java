@@ -13,4 +13,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IApplicationInfoService extends IService<ApplicationInfo> {
 
+    void addApplicationInfo(ApplicationInfo applicationInfo);
 }
