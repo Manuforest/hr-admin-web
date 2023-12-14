@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author cwq
@@ -18,14 +18,14 @@ public class VolunteerWork implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
+    @TableId(value = "volunteerWorkId", type = IdType.AUTO)
+    private Integer volunteerWorkId;
 
-    private String name;
+    private String volunteerWorkName;
 
-    private Object workhours;
+    private Object workHours;
 
-    private Integer recruitmentnumbers;
+    private Integer recruitmentNumbers;
 
     private String time;
 
@@ -37,36 +37,34 @@ public class VolunteerWork implements Serializable {
 
     private String location;
 
-    public Integer getId() {
-        return id;
+    public Integer getVolunteerWorkId() {
+        return volunteerWorkId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setVolunteerWorkId(Integer id) {
+        this.volunteerWorkId = id;
     }
 
-    public String getName() {
-        return name;
+    public String getVolunteerWorkName() {
+        return volunteerWorkName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setVolunteerWorkName(String name) {
+        this.volunteerWorkName = name;
     }
 
-    public Object getWorkhours() {
-        return workhours;
+    public Object getWorkHours() {
+        return workHours;
     }
 
-    public void setWorkhours(Object workhours) {
-        this.workhours = workhours;
+    public void setWorkHours(Object workHours) {
+        this.workHours = workHours;
     }
 
-    public Integer getRecruitmentnumbers() {
-        return recruitmentnumbers;
-    }
+    public Integer getRecruitmentNumbers() { return recruitmentNumbers;}
 
-    public void setRecruitmentnumbers(Integer recruitmentnumbers) {
-        this.recruitmentnumbers = recruitmentnumbers;
+    public void setRecruitmentNumbers(Integer recruitmentNumbers) {
+        this.recruitmentNumbers = recruitmentNumbers;
     }
 
     public String getTime() {
@@ -112,10 +110,10 @@ public class VolunteerWork implements Serializable {
     @Override
     public String toString() {
         return "VolunteerWork{" +
-            "id = " + id +
-            ", name = " + name +
-            ", workhours = " + workhours +
-            ", recruitmentnumbers = " + recruitmentnumbers +
+            "volunteerWorkId = " + volunteerWorkId +
+            ", volunteerWorkName = " + volunteerWorkName +
+            ", workHours = " + workHours +
+            ", recruitmentNumbers = " + recruitmentNumbers +
             ", time = " + time +
             ", applicants = " + applicants +
             ", content = " + content +

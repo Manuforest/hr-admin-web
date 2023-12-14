@@ -1,11 +1,13 @@
 package com.edu.sys.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author cwq
@@ -17,7 +19,7 @@ public class ApplicationInfo implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Integer uid;
-
+    @TableId(value = "vid", type = IdType.AUTO)
     private Integer vid;
 
     private String state;

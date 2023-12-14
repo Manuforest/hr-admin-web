@@ -47,6 +47,8 @@ public class User implements Serializable {
     @TableField(exist = false)
     private List<Integer> roleIdList;
 
+    private Integer totalworkhours;
+
     @Override
     public String toString() {
         return "User{" +
